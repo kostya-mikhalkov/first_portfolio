@@ -1,0 +1,78 @@
+.skills {
+    padding-top: 125px;
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+    }
+    &__box {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000000;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__wrap {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 45px;
+        row-gap: 30px;
+
+    }
+    &__img {
+        display: flex;
+        align-items: center;
+        min-height: 65px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 27px;
+    }
+    &__header-title {
+        position: relative;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        padding: 8px 0 0 14px;
+        @include before_circle;
+        &::before {
+            top: 0;
+            left: 0;
+        }
+    }
+    &__percent {
+        padding-top: 8px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__line {
+        position: relative;
+        width: 100%;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+        &-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: $main-color;
+            border-radius: 4px;
+        }
+    }
+}
