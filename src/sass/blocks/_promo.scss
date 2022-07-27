@@ -23,8 +23,9 @@
     &__link {
         color: rgb(0, 0, 0);
         font-weight: 700;
+        transition: all 0.5s;
         &:hover {
-            color: rgb(0, 0, 0);
+            color: $main-color;
             text-decoration: none;
         }
     }
